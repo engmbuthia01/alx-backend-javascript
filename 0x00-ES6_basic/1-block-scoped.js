@@ -1,10 +1,10 @@
 export default function taskBlock(trueOrFalse) {
-  const task = false; //const for bloack scope
-  const task2 = true; //const for block scope
+  var task = false;
+  var task2 = true;
 
   if (trueOrFalse) {
-    const task = true; //updating existing variable
-    const task2 = false; // updating existing variable
+    let task = true;
+    let task2 = false;
   }
 
   return [task, task2];
